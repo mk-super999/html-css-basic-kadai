@@ -1,83 +1,44 @@
-h1,p,body{
-    margin: 0;
-}
+<!doctype html>
+<html>
+<head>
+    <title>22章課題</title>
+    <meta name="description" content="このページは22章の課題です">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hukushu.css">
+    <meta name="viewport" content="width=device-width,intial=1.0">
+</head>
 
-p,a{font-size: 20px;}
+<body>
+    <header>
+        <h1>今日の傘予報</h1>
+    </header>
 
-header{
-    background-color: rgb(244, 79, 79) ;
-    text-align: center;
-    margin-bottom: 20px;
-    width:100%
+    <main>
+        <div id="parent">
+         <div class="contents">
+            <h2>東京の天気</h2>
+            <p>今日の天気は雨です</p>
+            <p>傘を持って行って下さい</p>
+            <img src="rainy.png" alt="雨の写真">
+         </div>
 
-}
+         <div class="contents">
+            <h2>北海道の天気</h2>
+            <p>今日の天気は曇りです</p>
+            <p>傘は念のために持っていきましょう</p>
+            <img src="cloudy.png" art="雲の写真">
+          </div>
 
-header h1{
-    color:rgb(255, 255, 255) ;
-}
+         <div class="contents">
+             <h2>沖縄の天気</h2>
+             <p>今日の天気は晴れです</p>
+             <p>傘は必要ないでしょう。</p>
+             <img src="sunny.png" alt="晴れの写真">
+         </div>
+        </div>
+    </main>
 
-main{
-    margin: 10px;
-}
-
-#parent{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contents{
-    border: 3px solid rgb(238, 204, 204) ;
-    flex-basis: 25px;
-    padding: 10px 15px;
-    margin: 20px 0px;
-    text-align: center; 
-}
-
-h2{
-     font-size: 25px;
-     border-bottom:3px dotted rgb(239, 122, 122); 
-}
-
-h2::before{
-    content: ●;
-    color: rgb(239, 111, 139);
-}
-
-#parent .contents p:nth-of-type(2)::first-letter{
-    font-weight: bold;
-    color: rgb(97,206,249);
-}
-
-#parent .contents{
-    margin: 10px 0px;
-    width: 70%;
-}
-
-footer{
-    background-color: rgb(244, 79, 79);
-    text-align: center;
-}
-
-footer,a{
-    color:rgb(255, 255, 255) ;
-}
-
-footer,a:hover{
-    color: rgb(245, 178, 168);
-}
-
-footer,a:visited{
-    color: rgb(193, 234, 251);
-}
-
-@media screen and (max-width:768px) {
-    h2{font-size: 30px;
-    }
-    p{
-        font-size: 25px;
-    }
-    #parent{
-        display: flex;
-        display: block;
-    }
-}
+    <footer>
+        <a href="https://www.sejuku.net/corp/?_gl=1*rub9na*_ga*ODI0MTQ2MTA1LjE2ODY4MTgzNzk.*_ga_8Y6TNFRTP7*MTY5MDI4ODQ0MS4zLjEuMTY5MDI4ODQ5MC4xMS4wLjA.">&copy;SAMURAI WEATHER NEWS
+        </a>
+    </footer>
